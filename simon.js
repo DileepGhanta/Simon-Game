@@ -4,19 +4,19 @@ let level=0;
 let is_started=false;
 let nav=document.querySelector(".highestlevel")
 let highestlevel=level;
-// let icon=document.querySelector(".material-symbols-outlined");
-// let is_clicked=false;
-// let info=document.querySelector(".info-alt");
-// icon.addEventListener("click",()=>{
-//   if(!is_clicked){
-//   info.style.display="none";
-//   is_clicked=true;
-//   }
-//   else{
-//   info.style.display="initial";
-//   is_clicked=false;
-//   }
-// })
+let icon=document.querySelector(".material-symbols-outlined");
+let is_clicked=false;
+let info=document.querySelector(".info-alt");
+icon.addEventListener("click",()=>{
+  if(!is_clicked){
+  info.style.display="none";
+  is_clicked=true;
+  }
+  else{
+  info.style.display="initial";
+  is_clicked=false;
+  }
+})
 start.addEventListener("click",()=>{
     if(!is_started){
         is_started=true;

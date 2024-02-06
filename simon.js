@@ -37,8 +37,9 @@ let userpattern=[];
 let currentPattern=[];
 let colors=[".red",".blue",".yellow",".green"];
 function removeGlow(btn){
-    btn.style.opacity=0.7;
+  btn.style.opacity=0.7;
 }
+let k = 1;
 let selectedButton;
 function levelIncrease(){
     level++;
@@ -69,29 +70,29 @@ buttons.push(green);
 buttons.push(blue);
 buttons.push(red);
 for (let button of buttons) {
-    button.addEventListener("click", function () {
-      userpattern.push(`.${this.className}`);
-      let currentbutton=document.querySelector(`.${this.className}`);
-      currentbutton.style.opacity=1;
-      setTimeout(()=>{
-        removeGlow(currentbutton)
-      },300);
-      inputcount++;
-      let k = 1;
-        for (let i = 0; i < userpattern.length; i++) {
-          if (userpattern[i] != currentPattern[i]){
-            k = 0;
-            break;
-          } 
-        }
-      if (k == 1 && inputcount == level) {
-        inputcount = 0;
-        userpattern = [];
-        levelIncrease();
-      } else if (k==0 || inputcount == level) {
-        inputcount=0;
-        userpattern=[];
-        h3.innerText = "Oops!! You lost Try Again";
+  button.addEventListener("click", function () {
+    userpattern.push(`.${this.className}`);
+    let currentbutton=document.querySelector(`.${this.className}`);
+    currentbutton.style.opacity=1;
+    setTimeout(()=>{
+      removeGlow(currentbutton)
+    },300);
+    inputcount++;
+    for (let i = 0; i < userpattern.length; i++) {
+      if (userpattern[i] != currentPattern[i]){
+        k = 0;
+        break;
+      } 
+    }
+    if (k == 1 && inputcount == level) {
+      inputcount = 0;
+      userpattern = [];
+      levelIncrease();
+    } else if (k==0) {
+      inputcount=0;
+      userpattern=[];
+      currentPattern=[];
+      h3.innerText = "Oops!! You lost Try Again";
       }
     });
   }

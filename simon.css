@@ -1,0 +1,276 @@
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.mainbody .aligndiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    margin-top: 3rem;
+}
+.material-symbols-outlined{
+    align-self: flex-end;
+}
+.level{
+    height: 80px;
+}
+.info{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+.info:hover{
+    cursor: default;
+}
+nav{
+    position: fixed;
+    right : 60px;
+    top: 20px;
+    display: inline;
+    font-size: 160%;
+    font-weight: 700;
+}
+.yellow{
+    background-color: rgb(208, 208, 84);
+    opacity: 0.7;
+    border: 7px solid white;
+}
+.blue{
+    background-color: rgb(83, 83, 185);
+    opacity: 0.7;
+    border: 7px solid white;
+}
+.red{
+    background-color: rgb(226, 101, 101);
+    opacity: 0.7;
+    border: 7px solid white;
+}
+.green{
+    background-color: rgb(101, 202, 101);
+    opacity: 0.7;
+    border: 7px solid white;
+}
+button{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 2.5rem;
+    margin: 1rem;
+}
+button:active{
+    transform:scale(1.03);h1{
+        margin-top: 5rem;
+    }
+}
+.btnstart{
+    background-color: rgb(167, 135, 96);
+    height: 3rem;
+    width:10rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-size: x-large;
+    color: white;
+    font-weight: 500;
+}
+h1{
+    font-size: 240% ;
+}
+h3{
+    font-size:180%;
+}
+@media screen and (max-width:637px) and (min-width:500px){
+    .first{
+        margin-top: 2rem;
+    }
+    .game{
+        padding: 3rem;
+    }
+    .level{
+        height: 80px;
+    }
+    nav{
+        position: fixed;
+        right : 50px;
+        top: 28px;
+        display: inline;
+        font-size: 130%;
+        font-weight: 600;
+    }
+    .yellow{
+        border: 5px solid white;
+    }
+    .blue{
+        border: 5px solid white;
+    }
+    .red{
+        border: 5px solid white;
+    }
+    .green{
+        border: 5px solid white;
+    }
+    button{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 2rem;
+        margin: 0.8rem;
+    }
+    h1{
+        font-size: 180% ;
+    }
+    h3{
+        font-size:150%;
+    }
+}
+@media screen and (max-width:499px) and (min-width:430px){
+    .first{
+        margin-top: 2rem;
+    }
+    .game{
+        padding: 3rem;
+    }
+    .level{
+        height: 80px;
+    }
+    nav{
+        position: fixed;
+        right : 50px;
+        top: 28px;
+        display: inline;
+        font-size: 130%;
+        font-weight: 600;
+    }
+    .yellow{
+        border: 4.5px solid white;
+    }
+    .blue{
+        border: 4.5px solid white;
+    }
+    .red{
+        border: 4.5px solid white;
+    }
+    .green{
+        border: 4.5px solid white;
+    }
+    button{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 1.75rem;
+        margin: 0.7rem;
+    }
+    h1{
+        font-size: 160% ;
+    }
+    h3{
+        font-size:150%;
+    }
+}
+@media screen and (max-width:429px) and (min-width:350px){
+    .first{
+        margin-top: 2rem;
+    }
+    .game{
+        padding: 3rem;
+    }
+    .level{
+        height: 80px;
+    }
+    nav{
+        position: fixed;
+        right : 30px;
+        top: 20px;
+        display: inline;
+        font-size: 110%;
+        font-weight: 600;
+    }
+    .yellow{
+        border: 3px solid white;
+    }
+    .blue{
+        border: 3px solid white;
+    }
+    .red{
+        border: 3px solid white;
+    }
+    .green{
+        border: 3px solid white;
+    }
+    button{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 1.25rem;
+        margin: 0.5rem;
+    }
+    .btnstart{
+        height: 3rem;
+        width:7rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        font-size: large;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 150% ;
+    }
+    h3{
+        font-size:135%;
+    }
+}
+@media screen and (max-width:349px) and (min-width:285px){
+    .first{
+        margin-top: 2rem;
+    }
+    .game{
+        padding: 3rem;
+    }
+    .level{
+        height: 80px;
+    }
+    nav{
+        position: fixed;
+        right : 30px;
+        top: 20px;
+        display: inline;
+        font-size: 110%;
+        font-weight: 600;
+    }
+    .yellow{
+        border: 2px solid white;
+    }
+    .blue{
+        border: 2px solid white;
+    }
+    .red{
+        border: 2px solid white;
+    }
+    .green{
+        border: 2px solid white;
+    }
+    button{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 1rem;
+        margin: 0.25rem;
+    }
+    .btnstart{
+        height: 2rem;
+        width:5rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        font-size: small;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 130% ;
+    }
+    h3{
+        font-size:125%;
+    }
+}
+.btn-close{
+    margin: 0px;
+}

@@ -93,6 +93,7 @@ for (let button of buttons) {
       userpattern=[];
       currentPattern=[];
       h3.innerText = "Oops!! You lost Try Again";
+      k=1;
       }
     });
   }
